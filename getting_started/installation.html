@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?94c5af14a4ff13a8280a4ab4">
-    <link rel="stylesheet" href="../_static/pygments.css?94c5af14a4ff13a8280a4ab4">
+    <link rel="stylesheet" href="../_static/styles/default.css?724445052d842089f469c8b5">
+    <link rel="stylesheet" href="../_static/pygments.css?724445052d842089f469c8b5">
     
 <style>
   :root {
@@ -26,7 +26,7 @@
         <script src="../_static/language_data.js" defer></script>
       
         <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script><script src="../_static/scripts/main.js?94c5af14a4ff13a8280a4ab4"></script></head>
+        <script src="../_static/copybutton.js"></script><script src="../_static/scripts/main.js?724445052d842089f469c8b5"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,10 +134,12 @@
 <p>If you want to hack on manimlib itself, clone this repository and in
 that directory execute:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install python requirements</span>
-pip install -r requirements.txt
+pip install -e .
 
 <span class="c1"># Try it out</span>
-python -m manim example_scenes.py OpeningManimExample
+manimgl example_scenes.py OpeningManimExample
+<span class="c1"># or</span>
+manim-render example_scenes.py OpeningManimExample
 </pre></div>
 </div>
 <p>If you run the above command and no error message appears,
@@ -154,8 +156,8 @@ FFmpeg</a>, and make sure that its path is in the PATH environment variable.</p>
 </ol>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/3b1b/manim.git
 <span class="nb">cd</span> manim
-pip install -r requirements.txt
-python manim.py example_scenes.py OpeningManimExample
+pip install -e .
+manimgl example_scenes.py OpeningManimExample
 </pre></div>
 </div>
 </div>
