@@ -16,6 +16,8 @@ from manimlib.animation.update import *
 
 from manimlib.camera.camera import *
 
+from manimlib.window import *
+
 from manimlib.mobject.coordinate_systems import *
 from manimlib.mobject.changing import *
 from manimlib.mobject.frame import *
