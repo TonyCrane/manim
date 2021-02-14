@@ -401,6 +401,7 @@ class Textbox(ControlMobject):
         return False
 
     def on_key_press(self, mob, event_data):
+        from pyglet.window import key as PygletWindowKeys
         symbol = event_data["symbol"]
         modifiers = event_data["modifiers"]
         char = chr(symbol)
