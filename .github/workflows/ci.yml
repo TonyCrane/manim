@@ -24,7 +24,7 @@ jobs:
         sudo apt install ffmpeg -y
         sudo apt install texlive texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-science texlive-fonts-extra tipa -y
         sudo apt install freeglut3-dev -y
-        sudo apt install xvbf -y
+        sudo apt install xvfb -y
       
     - name: Install manim
       run: |
