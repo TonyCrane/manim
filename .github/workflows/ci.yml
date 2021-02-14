@@ -1,0 +1,40 @@
+name: CI
+
+on: [ push, pull_request ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: test
+    strategy:
+      matrix:
+        python-version: [ '3.6', '3.7', '3.8', '3.9' ]
+      fail-fast: false
+
+    steps:
+    - uses: actions/checkout@master
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install system dependencies
+      run: |
+        sudo apt update
+        sudo apt install ffmpeg -y
+        sudo apt install texlive-full -y
+      
+    - name: Install manim
+      run: |
+        pip install .
+    
+    - name: Render example scenes
+      run: |
+        manimgl example_scenes.py -aw
+
+    - name: Save videos as artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: example_scenes
+        path: videos/
+
