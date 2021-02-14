@@ -23,7 +23,6 @@ jobs:
         sudo apt update
         sudo apt install ffmpeg -y
         sudo apt install texlive texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-science texlive-fonts-extra tipa -y
-        python check_latex_packages.py
       
     - name: Install manim
       run: |
