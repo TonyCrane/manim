@@ -4,7 +4,8 @@ import re
 
 def check_latex_packages():
     test_template = r"""\documentclass[preview]{standalone}
-\usepackage[UTF8]{ctex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{test_package}
 \begin{document}
 Test
@@ -26,15 +27,16 @@ Test
         "physics",
         "xcolor",
         "microtype",
+        "pifont",
     ]
 
     for package in packages:
-        with open("xelatex_package_test.tex", "w", encoding="utf8") as fout:
+        with open("latex_package_test.tex", "w", encoding="utf8") as fout:
             test = test_template.replace("test_package", package)
             fout.write(test)
-        print(f"Testing xelatex package {package:<15} ", end="")
+        print(f"Testing latex package {package:<15} ", end="")
         test_run = subprocess.run(
-            ["xelatex", "-no-pdf", "-interaction=batchmode", "xelatex_package_test.tex"],
+            ["latex", "-interaction=batchmode", "latex_package_test.tex"],
             capture_output=True
         )
         if test_run.returncode == 0:
@@ -42,7 +44,7 @@ Test
         else:
             print("failed")
             print("printing error log")
-            with open("xelatex_package_test.log", "r") as logfile:
+            with open("latex_package_test.log", "r") as logfile:
                 log = logfile.read()
             error_regex = re.compile(r"!(.*\n){5}")
             m = error_regex.search(log)
@@ -50,10 +52,10 @@ Test
                 print(line)
 
     print("Clean up testing artifacts...", end="")
-    os.remove("xelatex_package_test.aux")
-    os.remove("xelatex_package_test.xdv")
-    os.remove("xelatex_package_test.log")
-    os.remove("xelatex_package_test.tex")
+    os.remove("latex_package_test.aux")
+    os.remove("latex_package_test.xdv")
+    os.remove("latex_package_test.log")
+    os.remove("latex_package_test.tex")
     print("done")
 
 if __name__ == "__main__":
