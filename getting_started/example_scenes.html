@@ -1,15 +1,16 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="CONFIG dictionary" href="config.html" /><link rel="prev" title="CLI flags and configuration" href="configuration.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="CONFIG dictionary" href="config.html" /><link rel="prev" title="CLI flags and configuration" href="configuration.html" />
 
     <link rel="shortcut icon" href="../_static/icon.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Example Scenes - manim  documentation</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?b0f4a815b929dfdb76dcb4ef">
-    <link rel="stylesheet" href="../_static/pygments.css?b0f4a815b929dfdb76dcb4ef">
+    <link rel="stylesheet" href="../_static/styles/default.css?ebc94399ae378fa6219eafd0">
+    <link rel="stylesheet" href="../_static/pygments.css?ebc94399ae378fa6219eafd0">
     
 <style>
   :root {
@@ -26,7 +27,7 @@
         <script src="../_static/language_data.js" defer></script>
       
         <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script><script src="../_static/scripts/main.js?b0f4a815b929dfdb76dcb4ef"></script></head>
+        <script src="../_static/copybutton.js"></script><script src="../_static/scripts/main.js?ebc94399ae378fa6219eafd0"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -87,7 +88,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption"><span class="caption-text">Getting Started</span></p>
+  <p><span class="caption-text">Getting Started</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
@@ -97,12 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="structure.html">Manim’s structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s new</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Documentation</span></p>
+<p><span class="caption-text">Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/constants.html">constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/custom_config.html">custom_config</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Development</span></p>
+<p><span class="caption-text">Development</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../development/changelog.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">Contributing</a></li>
@@ -120,16 +121,16 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="example-scenes">
+        <section id="example-scenes">
 <h1>Example Scenes<a class="headerlink" href="#example-scenes" title="Permalink to this headline">¶</a></h1>
 <p>After understanding the previous knowledge, we can understand more scenes.
 Many example scenes are given in <code class="docutils literal notranslate"><span class="pre">example_scenes.py</span></code>, let’s start with
 the simplest and one by one.</p>
-<div class="section" id="interactivedevlopment">
+<section id="interactivedevlopment">
 <h2>InteractiveDevlopment<a class="headerlink" href="#interactivedevlopment" title="Permalink to this headline">¶</a></h2>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="interactivedevlopment" loop="" src="../_static/example_scenes/InteractiveDevlopment.mp4"></video><h5 class="example-header">InteractiveDevlopment<a class="headerlink" href="#interactivedevlopment">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="interactivedevelopment" loop="" src="../_static/example_scenes/InteractiveDevelopment.mp4"></video><h5 class="example-header">InteractiveDevelopment<a class="headerlink" href="#interactivedevelopment">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
 
-<span class="k">class</span> <span class="nc">InteractiveDevlopment</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">InteractiveDevelopment</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
         <span class="n">circle</span><span class="o">.</span><span class="n">set_fill</span><span class="p">(</span><span class="n">BLUE</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -178,8 +179,8 @@ the simplest and one by one.</p>
 </div><p>This scene is similar to what we wrote in <a class="reference internal" href="quickstart.html"><span class="doc">Quick Start</span></a>.
 And how to interact has been written in the comments.
 No more explanation here.</p>
-</div>
-<div class="section" id="animatingmethods">
+</section>
+<section id="animatingmethods">
 <h2>AnimatingMethods<a class="headerlink" href="#animatingmethods" title="Permalink to this headline">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="animatingmethods" loop="" src="../_static/example_scenes/AnimatingMethods.mp4"></video><h5 class="example-header">AnimatingMethods<a class="headerlink" href="#animatingmethods">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AnimatingMethods</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -234,11 +235,13 @@ No more explanation here.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">.get_grid()</span></code> method will return a new mobject containing multiple copies of this one arranged in a grid.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">self.play(mob.animate.method(args))</span></code> animates the method, and the details are in the comments above.</p></li>
 </ul>
-</div>
-<div class="section" id="textexample">
+</section>
+<section id="textexample">
 <h2>TextExample<a class="headerlink" href="#textexample" title="Permalink to this headline">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="textexample" loop="" src="../_static/example_scenes/TextExample.mp4"></video><h5 class="example-header">TextExample<a class="headerlink" href="#textexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TextExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># To run this scene properly, you should have "Consolas" font in your computer</span>
+        <span class="c1"># for full usage, you can see https://github.com/3b1b/manim/pull/680</span>
         <span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Here is a text"</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="s2">"Consolas"</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
         <span class="n">difference</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
             <span class="sd">"""</span>
@@ -246,6 +249,7 @@ No more explanation here.</p>
 <span class="sd">            you can change the font more easily, but can't use the LaTeX grammar</span>
 <span class="sd">            """</span><span class="p">,</span>
             <span class="n">font</span><span class="o">=</span><span class="s2">"Arial"</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
+            <span class="c1"># t2c is a dict that you can choose color for different text</span>
             <span class="n">t2c</span><span class="o">=</span><span class="p">{</span><span class="s2">"Text"</span><span class="p">:</span> <span class="n">BLUE</span><span class="p">,</span> <span class="s2">"TexText"</span><span class="p">:</span> <span class="n">BLUE</span><span class="p">,</span> <span class="s2">"LaTeX"</span><span class="p">:</span> <span class="n">ORANGE</span><span class="p">}</span>
         <span class="p">)</span>
         <span class="n">VGroup</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">difference</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -259,6 +263,7 @@ No more explanation here.</p>
             <span class="n">t2f</span><span class="o">=</span><span class="p">{</span><span class="s2">"font"</span><span class="p">:</span> <span class="s2">"Consolas"</span><span class="p">,</span> <span class="s2">"words"</span><span class="p">:</span> <span class="s2">"Consolas"</span><span class="p">},</span>
             <span class="n">t2c</span><span class="o">=</span><span class="p">{</span><span class="s2">"font"</span><span class="p">:</span> <span class="n">BLUE</span><span class="p">,</span> <span class="s2">"words"</span><span class="p">:</span> <span class="n">GREEN</span><span class="p">}</span>
         <span class="p">)</span>
+        <span class="n">fonts</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="n">FRAME_WIDTH</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
         <span class="n">slant</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
             <span class="s2">"And the same as slant and weight"</span><span class="p">,</span>
             <span class="n">font</span><span class="o">=</span><span class="s2">"Consolas"</span><span class="p">,</span>
@@ -282,27 +287,31 @@ No more explanation here.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">FadeIn</span></code> fades the object in, the second parameter indicates the direction of the fade in.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">FadeOut</span></code> fades out the object, the second parameter indicates the direction of the fade out.</p></li>
 </ul>
-</div>
-<div class="section" id="textransformexample">
+</section>
+<section id="textransformexample">
 <h2>TexTransformExample<a class="headerlink" href="#textransformexample" title="Permalink to this headline">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="textransformexample" loop="" src="../_static/example_scenes/TexTransformExample.mp4"></video><h5 class="example-header">TexTransformExample<a class="headerlink" href="#textransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TexTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">to_isolate</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">,</span> <span class="s2">"("</span><span class="p">,</span> <span class="s2">")"</span><span class="p">]</span>
         <span class="n">lines</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
-            <span class="c1"># Surrounding substrings with double braces</span>
-            <span class="c1"># will ensure that those parts are separated</span>
-            <span class="c1"># out in the Tex.  For example, here the</span>
-            <span class="c1"># Tex will have 5 submobjects, corresponding</span>
-            <span class="c1"># to the strings [A^2, +, B^2, =, C^2]</span>
-            <span class="n">Tex</span><span class="p">(</span><span class="s2">"{{A^2}} + {{B^2}} = {{C^2}}"</span><span class="p">),</span>
-            <span class="n">Tex</span><span class="p">(</span><span class="s2">"{{A^2}} = {{C^2}} - {{B^2}}"</span><span class="p">),</span>
+            <span class="c1"># Passing in muliple arguments to Tex will result</span>
+            <span class="c1"># in the same expression as if those arguments had</span>
+            <span class="c1"># been joined together, except that the submobject</span>
+            <span class="c1"># heirarchy of the resulting mobject ensure that the</span>
+            <span class="c1"># Tex mobject has a subject corresponding to</span>
+            <span class="c1"># each of these strings.  For example, the Tex mobject</span>
+            <span class="c1"># below will have 5 subjects, corresponding to the</span>
+            <span class="c1"># expressions [A^2, +, B^2, =, C^2]</span>
+            <span class="n">Tex</span><span class="p">(</span><span class="s2">"A^2"</span><span class="p">,</span> <span class="s2">"+"</span><span class="p">,</span> <span class="s2">"B^2"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">,</span> <span class="s2">"C^2"</span><span class="p">),</span>
+            <span class="c1"># Likewise here</span>
+            <span class="n">Tex</span><span class="p">(</span><span class="s2">"A^2"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">,</span> <span class="s2">"C^2"</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="s2">"B^2"</span><span class="p">),</span>
             <span class="c1"># Alternatively, you can pass in the keyword argument</span>
             <span class="c1"># "isolate" with a list of strings that should be out as</span>
-            <span class="c1"># their own submobject.  So both lines below are equivalent</span>
-            <span class="c1"># to what you'd get by wrapping every instance of "B", "C"</span>
-            <span class="c1"># "=", "(" and ")" with double braces</span>
-            <span class="n">Tex</span><span class="p">(</span><span class="s2">"{{A^2}} = (C + B)(C - B)"</span><span class="p">,</span> <span class="n">isolate</span><span class="o">=</span><span class="n">to_isolate</span><span class="p">),</span>
-            <span class="n">Tex</span><span class="p">(</span><span class="s2">"A = </span><span class="se">\\</span><span class="s2">sqrt{(C + B)(C - B)}"</span><span class="p">,</span> <span class="n">isolate</span><span class="o">=</span><span class="n">to_isolate</span><span class="p">)</span>
+            <span class="c1"># their own submobject.  So the line below is equivalent</span>
+            <span class="c1"># to the commented out line below it.</span>
+            <span class="n">Tex</span><span class="p">(</span><span class="s2">"A^2 = (C + B)(C - B)"</span><span class="p">,</span> <span class="n">isolate</span><span class="o">=</span><span class="p">[</span><span class="s2">"A^2"</span><span class="p">,</span> <span class="o">*</span><span class="n">to_isolate</span><span class="p">]),</span>
+            <span class="c1"># Tex("A^2", "=", "(", "C", "+", "B", ")", "(", "C", "-", "B", ")"),</span>
+            <span class="n">Tex</span><span class="p">(</span><span class="s2">"A = </span><span class="se">\\</span><span class="s2">sqrt{(C + B)(C - B)}"</span><span class="p">,</span> <span class="n">isolate</span><span class="o">=</span><span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="o">*</span><span class="n">to_isolate</span><span class="p">])</span>
         <span class="p">)</span>
         <span class="n">lines</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="n">LARGE_BUFF</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
@@ -361,7 +370,7 @@ No more explanation here.</p>
         <span class="c1"># new_line2 and the "\sqrt" from the final line.  By passing in,</span>
         <span class="c1"># transform_mismatches=True, it will transform this "^2" part into</span>
         <span class="c1"># the "\sqrt" part.</span>
-        <span class="n">new_line2</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">"{{A}}^2 = (C + B)(C - B)"</span><span class="p">,</span> <span class="n">isolate</span><span class="o">=</span><span class="n">to_isolate</span><span class="p">)</span>
+        <span class="n">new_line2</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">"A^2 = (C + B)(C - B)"</span><span class="p">,</span> <span class="n">isolate</span><span class="o">=</span><span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="o">*</span><span class="n">to_isolate</span><span class="p">])</span>
         <span class="n">new_line2</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
         <span class="n">new_line2</span><span class="o">.</span><span class="n">match_style</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 
@@ -401,8 +410,8 @@ and <code class="docutils literal notranslate"><span class="pre">TransformMatchi
 <li><p><code class="docutils literal notranslate"><span class="pre">TransformMatchingTeX</span></code> automatically transforms sub-objects according to the similarities and differences of tex in <code class="docutils literal notranslate"><span class="pre">Tex</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">TransformMatchingShapes</span></code> automatically transform sub-objects directly based on the similarities and differences of the object point sets.</p></li>
 </ul>
-</div>
-<div class="section" id="updatersexample">
+</section>
+<section id="updatersexample">
 <h2>UpdatersExample<a class="headerlink" href="#updatersexample" title="Permalink to this headline">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="updatersexample" loop="" src="../_static/example_scenes/UpdatersExample.mp4"></video><h5 class="example-header">UpdatersExample<a class="headerlink" href="#updatersexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdatersExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -450,7 +459,7 @@ and <code class="docutils literal notranslate"><span class="pre">TransformMatchi
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">square</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">stretch</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span>
+            <span class="n">square</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">stretch</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span>
             <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
@@ -484,15 +493,15 @@ and <code class="docutils literal notranslate"><span class="pre">TransformMatchi
 <li><p><code class="docutils literal notranslate"><span class="pre">.set_y()</span></code> means to set the ordinate of the object on the screen.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">.add_updater()</span></code> sets an update function for the object. For example: <code class="docutils literal notranslate"><span class="pre">mob1.add_updater(lambda</span> <span class="pre">mob:</span> <span class="pre">mob.next_to(mob2))</span></code> means <code class="docutils literal notranslate"><span class="pre">mob1.next_to(mob2)</span></code> is executed every frame.</p></li>
 </ul>
-</div>
-<div class="section" id="coordinatesystemexample">
+</section>
+<section id="coordinatesystemexample">
 <h2>CoordinateSystemExample<a class="headerlink" href="#coordinatesystemexample" title="Permalink to this headline">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="coordinatesystemexample" loop="" src="../_static/example_scenes/CoordinateSystemExample.mp4"></video><h5 class="example-header">CoordinateSystemExample<a class="headerlink" href="#coordinatesystemexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CoordinateSystemExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
             <span class="c1"># x-axis ranges from -1 to 10, with a default step size of 1</span>
             <span class="n">x_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
-            <span class="c1"># y-axis ranges from -2 to 10 with a step size of 0.5</span>
+            <span class="c1"># y-axis ranges from -2 to 2 with a step size of 0.5</span>
             <span class="n">y_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
             <span class="c1"># The axes will be stretched so as to match the specified</span>
             <span class="c1"># height and width</span>
@@ -555,8 +564,7 @@ and <code class="docutils literal notranslate"><span class="pre">TransformMatchi
         <span class="c1"># system defined by them.</span>
         <span class="n">f_always</span><span class="p">(</span><span class="n">dot</span><span class="o">.</span><span class="n">move_to</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">axes</span><span class="o">.</span><span class="n">c2p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">axes</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.75</span><span class="p">),</span>
-            <span class="n">axes</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">UL</span><span class="p">),</span>
+            <span class="n">axes</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">UL</span><span class="p">),</span>
             <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
@@ -566,8 +574,8 @@ and <code class="docutils literal notranslate"><span class="pre">TransformMatchi
         <span class="c1"># ThreeDAxes, NumberPlane, and ComplexPlane.</span>
 </pre></div>
 </div>
-</div></div>
-<div class="section" id="graphexample">
+</div></section>
+<section id="graphexample">
 <h2>GraphExample<a class="headerlink" href="#graphexample" title="Permalink to this headline">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="graphexample" loop="" src="../_static/example_scenes/GraphExample.mp4"></video><h5 class="example-header">GraphExample<a class="headerlink" href="#graphexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">GraphExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -650,8 +658,8 @@ and <code class="docutils literal notranslate"><span class="pre">TransformMatchi
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div></div>
-<div class="section" id="surfaceexample">
+</div></section>
+<section id="surfaceexample">
 <h2>SurfaceExample<a class="headerlink" href="#surfaceexample" title="Permalink to this headline">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="surfaceexample" loop="" src="../_static/example_scenes/SurfaceExample.mp4"></video><h5 class="example-header">SurfaceExample<a class="headerlink" href="#surfaceexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SurfaceExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="n">CONFIG</span> <span class="o">=</span> <span class="p">{</span>
@@ -749,8 +757,8 @@ the related usage has been briefly described in the notes.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">.fix_in_frame()</span></code> makes the object not change with the view angle of the screen, and is always displayed at a fixed position on the screen.</p></li>
 </ul>
-</div>
-<div class="section" id="openingmanimexample">
+</section>
+<section id="openingmanimexample">
 <h2>OpeningManimExample<a class="headerlink" href="#openingmanimexample" title="Permalink to this headline">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="openingmanimexample" loop="" src="../_static/example_scenes/OpeningManimExample.mp4"></video><h5 class="example-header">OpeningManimExample<a class="headerlink" href="#openingmanimexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">OpeningManimExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -814,8 +822,8 @@ the related usage has been briefly described in the notes.</p>
 </div><p>This scene is a comprehensive application of a two-dimensional scene.</p>
 <p>After seeing these scenes, you have already understood part of the
 usage of manim. For more examples, see <a class="reference external" href="https://github.com/3b1b/videos">the video code of 3b1b</a>.</p>
-</div>
-</div>
+</section>
+</section>
 
       </article>
       <footer>
